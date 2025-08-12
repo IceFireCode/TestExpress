@@ -12,9 +12,10 @@
     "test": "jest --watchAll --color --coverage --verbose",
     "test:ci": "jest --color --coverage --verbose",
     "lint": "eslint . --ext .ts --ignore-pattern 'dist/**' --max-warnings 0",
-    "build-image": "docker build -t TestExpress . --progress=plain",
-    "run-image": "docker run -d -p 3000:3000 TestExpress",
-    "smoketest": "curl http://127.0.0.1:3000/health"
+    "build-image": "docker build -t testexpress . --progress=plain",
+    "run-image": "docker run -d -p 3000:3000 testexpress",
+    "smoketest": "curl http://127.0.0.1:3000/health",
+    "prepare": "husky"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
