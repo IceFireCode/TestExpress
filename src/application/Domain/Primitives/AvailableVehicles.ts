@@ -21,4 +21,18 @@ export const AvailableVehicles = {
       tankCapacity: 50,
     },
   },
+  Tesla: {
+    Model3: {
+      brand: 'Tesla',
+      model: 'Model 3',
+      fuelConsumption: 15,
+      tankCapacity: 75,
+    },
+    ModelS: {
+      brand: 'Tesla',
+      model: 'Model S',
+      fuelConsumption: 20,
+      tankCapacity: 100,
+    },
+  },
 } as const;

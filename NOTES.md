@@ -25,5 +25,5 @@ Did not seem necessary, the code is quite readable and understandable, but the a
 [x] refactor: create abstract base class for shared logic of cars
 [x] refactor: rename fuelConsumption to fuelConsumptionInLiterPer100km to get rid of two comments
 [x] create test to create an electric car instance -> batteryCapacity = 0
-[ ] create the ElectricCar class and make the test pass
+[x] create the ElectricCar (using same CarModel) class and make the test pass
 

@@ -5,7 +5,6 @@ import { Cars } from '../Cars';
 export class GasolineCar extends Cars implements IGasolineCarEntity {
   private readonly fuelConsumptionInLiterPer100km: number;
   private readonly tankCapacity: number;
-  private totalMileage: number = 0;
   private fuelAvailable: number;
 
   constructor(public modelInfo: CarModel) {
@@ -26,10 +25,6 @@ export class GasolineCar extends Cars implements IGasolineCarEntity {
     const tripFuelConsumption = this.calculateTripFuelConsumption(distance);
     this.fuelAvailable -= tripFuelConsumption;
     this.totalMileage += distance;
-  }
-
-  public mileage(): number {
-    return this.totalMileage;
   }
 
   public fuelAmount(): number {

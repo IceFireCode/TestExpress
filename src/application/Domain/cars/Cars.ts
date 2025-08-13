@@ -4,6 +4,7 @@ export abstract class Cars {
   protected readonly _id: UUID = randomUUID();
   protected readonly brand: string;
   protected readonly model: string;
+  protected totalMileage: number = 0;
 
   protected constructor(brand: string, model: string) {
     this._id = randomUUID();
@@ -17,5 +18,9 @@ export abstract class Cars {
 
   public name(): string {
     return `${this.brand} ${this.model} ${this.id()}`;
+  }
+
+  public mileage(): number {
+    return this.totalMileage;
   }
 }

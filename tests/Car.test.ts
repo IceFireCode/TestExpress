@@ -1,5 +1,6 @@
 import { GasolineCar } from '../src/application/Domain/cars/car/GasolineCar';
 import { AvailableVehicles } from '../src/application/Domain/Primitives/AvailableVehicles';
+import { ElectricCar } from '../src/application/Domain/cars/car/ElectricCar';
 
 describe('Cars', () => {
   describe('Electric Car', () => {
