@@ -1,5 +1,5 @@
-import { Car } from '../src/Domain/Car';
-import { AvailableVehicles } from '../src/Domain/Primitives/AvailableVehicles';
+import { Car } from '../src/application/Domain/Car';
+import { AvailableVehicles } from '../src/application/Domain/Primitives/AvailableVehicles';
 
 describe('Car', () => {
   it('should be instantiated with zero mileage', () => {

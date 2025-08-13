@@ -15,6 +15,6 @@ Did not seem necessary, the code is quite readable and understandable, but the a
 ## 🍅 Pomodoro 2
 
 [x] read the requirements again and understand what is needed to be done
-[ ] create 'application' directory and move the code there except 'index'
+[x] create 'application' directory and move the code there except 'index'
 [ ] New index test to get the vehicles, make it pass with hardcoded data
 
