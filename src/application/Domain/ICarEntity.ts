@@ -4,7 +4,10 @@ export interface ICarEntity {
   id(): UUID;
   name(): string;
   data(): string;
-  refillGasoline(liters: number): void;
   travel(distance: number): void;
   mileage(): number;
+}
+
+export interface IGasolineCarEntity extends ICarEntity {
+  refillGasoline(liters: number): void;
 }

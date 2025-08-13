@@ -1,5 +1,5 @@
 import express, { Express, Request, Response } from 'express';
-import { Car } from './application/Domain/Car';
+import { GasolineCar } from './application/Domain/GasolineCar';
 import { AvailableVehicles } from './application/Domain/Primitives/AvailableVehicles';
 
 const app: Express = express();
@@ -16,7 +16,8 @@ app.get('/health', (_req: Request, res: Response) => {
 
 // GET /vehicles
 app.get('/vehicles', (_req: Request, res: Response) => {
-  const camryModelInfo = new Car(AvailableVehicles.Toyota.Camry).modelInfo;
+  const camryModelInfo = new GasolineCar(AvailableVehicles.Toyota.Camry)
+    .modelInfo;
   const vehicles = [
     {
       id: 1,
