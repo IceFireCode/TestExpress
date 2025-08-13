@@ -29,7 +29,7 @@ Did not seem necessary, the code is quite readable and understandable, but the a
 
 ## 🍅 Pomodoro 4
 
-[ ] Somehow deal with CarModel also needing to be separated into different interfaces
+[x] Somehow deal with CarModel also needing to be recognized as ElectricCar
 [ ] create more tests for the ElectricCar (or move to the future?)
 [ ] create a VehicleRepository to store the cars (in memory)
 [ ] create and store a gasoline and an electric car, then get them from the repository
