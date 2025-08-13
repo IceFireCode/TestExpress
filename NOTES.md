@@ -24,6 +24,6 @@ Did not seem necessary, the code is quite readable and understandable, but the a
 [x] refactor Car and ICarEntity to make it ready for adding the electric car type
 [x] refactor: create abstract base class for shared logic of cars
 [x] refactor: rename fuelConsumption to fuelConsumptionInLiterPer100km to get rid of two comments
-[ ] create test to create an electric car instance -> batteryCapacity = 0
+[x] create test to create an electric car instance -> batteryCapacity = 0
 [ ] create the ElectricCar class and make the test pass
 
