@@ -31,6 +31,5 @@ Did not seem necessary, the code is quite readable and understandable, but the a
 
 [x] Somehow deal with CarModel also needing to be recognized as ElectricCar
 [ ] create more tests for the ElectricCar (or move to the future?)
-[ ] create a VehicleRepository to store the cars (in memory)
-[ ] create and store a gasoline and an electric car, then get them from the repository
+[x] create and store a gasoline and an electric car, then get them from the repository
 [ ] create a VehicleController to handle the HTTP requests and responses
