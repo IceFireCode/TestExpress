@@ -15,7 +15,7 @@ app.get('/health', (_req: Request, res: Response) => {
 });
 
 // POST /vehicle
-app.post('/vehicle', (req: Request, res: Response) => {
+app.post('/vehicles', (req: Request, res: Response) => {
   carRepository.addCar(AvailableVehicles.Toyota.Camry);
   carRepository.addCar(AvailableVehicles.Tesla.Model3); // TODO use the body of the request to create the right car
   res.status(200).send();
