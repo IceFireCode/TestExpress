@@ -8,3 +8,5 @@ This document tracks known technical debt in the TestExpress project. Use this a
 - :warning: Should fix when time
 - :x: Must fix as soon as possible
 - :white_check_mark: done
+
+[ ] Use wrapper value classes for `km` and `mileage` etc to avoid primitive obsession
