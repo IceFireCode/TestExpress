@@ -36,4 +36,4 @@ Did not seem necessary, the code is quite readable and understandable, but the a
 
 ## 🍅 Pomodoro 5
 
-[ ] create POST /vehicles endpoint to create the cars and then list them
+[x] create POST /vehicles endpoint to create the cars and then list them
