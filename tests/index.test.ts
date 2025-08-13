@@ -18,6 +18,13 @@ describe('GET /health', () => {
     });
   });
 
+  describe('POST /vehicle', () => {
+    it('should respond with status 200', async () => {
+      const response = await request(server).get('/vehicles');
+      expect(response.status).toBe(200);
+    });
+  });
+
   describe('GET /vehicles', () => {
     afterEach(() => {
       jest.restoreAllMocks();
