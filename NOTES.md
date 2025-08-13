@@ -33,3 +33,7 @@ Did not seem necessary, the code is quite readable and understandable, but the a
 [ ] create more tests for the ElectricCar (or move to the future?)
 [x] create and store a gasoline and an electric car, then get them from the repository
 [ ] create a VehicleController to handle the HTTP requests and responses
+
+## 🍅 Pomodoro 5
+
+[ ] create POST /vehicles endpoint to create the cars and then list them
