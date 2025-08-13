@@ -3,14 +3,14 @@ import { IGasolineCarEntity } from './ICarEntity';
 import { Cars } from '../Cars';
 
 export class GasolineCar extends Cars implements IGasolineCarEntity {
-  private readonly fuelConsumption: number; // unit is l/100 km
+  private readonly fuelConsumptionInLiterPer100km: number;
   private readonly tankCapacity: number;
   private totalMileage: number = 0;
   private fuelAvailable: number;
 
   constructor(public modelInfo: CarModel) {
     super(modelInfo.brand, modelInfo.model);
-    this.fuelConsumption = modelInfo.fuelConsumption;
+    this.fuelConsumptionInLiterPer100km = modelInfo.fuelConsumption;
     this.tankCapacity = modelInfo.tankCapacity;
     this.fuelAvailable = 0;
   }
@@ -41,7 +41,6 @@ export class GasolineCar extends Cars implements IGasolineCarEntity {
   }
 
   private calculateTripFuelConsumption(distance: number) {
-    //consumption unit is l/100 km
-    return (this.fuelConsumption * distance) / 100;
+    return (this.fuelConsumptionInLiterPer100km * distance) / 100;
   }
 }
