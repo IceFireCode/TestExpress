@@ -1,5 +1,5 @@
 import express, { Express, Request, Response } from 'express';
-import { GasolineCar } from './application/Domain/GasolineCar';
+import { GasolineCar } from './application/Domain/cars/car/GasolineCar';
 import { AvailableVehicles } from './application/Domain/Primitives/AvailableVehicles';
 
 const app: Express = express();

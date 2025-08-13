@@ -1,4 +1,4 @@
-import { GasolineCar } from '../src/application/Domain/GasolineCar';
+import { GasolineCar } from '../src/application/Domain/cars/car/GasolineCar';
 import { AvailableVehicles } from '../src/application/Domain/Primitives/AvailableVehicles';
 
 describe('Car', () => {

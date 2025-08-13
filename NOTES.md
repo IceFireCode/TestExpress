@@ -22,7 +22,7 @@ Did not seem necessary, the code is quite readable and understandable, but the a
 
 [x] actually create the gasoline car instance in the get vehicles and keep the test passing
 [x] refactor Car and ICarEntity to make it ready for adding the electric car type
-[ ] refactor: create abstract base class for shared logic of cars
+[x] refactor: create abstract base class for shared logic of cars
 [ ] create test to create an electric car instance -> batteryCapacity = 0
 [ ] create the ElectricCar class and make the test pass
 
