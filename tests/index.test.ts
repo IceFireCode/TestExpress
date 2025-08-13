@@ -25,8 +25,8 @@ describe('GET /health', () => {
           model: 'Camry',
           engineType: 'gasoline',
           totalMileage: 15000.5,
-          fuelConsumption: 7.5,
-          tankCapacity: 60,
+          fuelConsumption: 7,
+          tankCapacity: 40,
           currentFuelLevel: 45,
         },
         {

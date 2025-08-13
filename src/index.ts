@@ -1,4 +1,6 @@
 import express, { Express, Request, Response } from 'express';
+import { Car } from './application/Domain/Car';
+import { AvailableVehicles } from './application/Domain/Primitives/AvailableVehicles';
 
 const app: Express = express();
 app.use(express.json()); // to parse JSON bodies
@@ -14,15 +16,16 @@ app.get('/health', (_req: Request, res: Response) => {
 
 // GET /vehicles
 app.get('/vehicles', (_req: Request, res: Response) => {
+  const camryModelInfo = new Car(AvailableVehicles.Toyota.Camry).modelInfo;
   const vehicles = [
     {
       id: 1,
-      brand: 'Toyota',
-      model: 'Camry',
+      brand: camryModelInfo.brand,
+      model: camryModelInfo.model,
       engineType: 'gasoline',
       totalMileage: 15000.5,
-      fuelConsumption: 7.5,
-      tankCapacity: 60,
+      fuelConsumption: camryModelInfo.fuelConsumption,
+      tankCapacity: camryModelInfo.tankCapacity,
       currentFuelLevel: 45,
     },
     {

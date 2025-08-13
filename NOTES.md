@@ -20,7 +20,7 @@ Did not seem necessary, the code is quite readable and understandable, but the a
 
 ## 🍅 Pomodoro 3
 
-[ ] actually create the gasoline car instance in the get vehicles and keep the test passing
+[x] actually create the gasoline car instance in the get vehicles and keep the test passing
 [ ] refactor Car and ICarEntity to make it ready for adding the electric car type
 [ ] create test to create an electric car instance -> batteryCapacity = 0
 [ ] create the ElectricCar class and make the test pass
