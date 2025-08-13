@@ -16,5 +16,5 @@ Did not seem necessary, the code is quite readable and understandable, but the a
 
 [x] read the requirements again and understand what is needed to be done
 [x] create 'application' directory and move the code there except 'index'
-[ ] New index test to get the vehicles, make it pass with hardcoded data
+[x] New index test to get the vehicles, make it pass with hardcoded data
 
